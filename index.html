@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dramatically Engage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        .navbar .logo {
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            position: relative;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #8FC742;
+            transform: scale(1.1);
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .nav-links .dropdown {
+            position: relative;
+        }
+
+        .navbar .nav-links .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .navbar .nav-links .dropdown-content a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .navbar .nav-links .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .navbar .nav-links .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .navbar .search-bar {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar input[type="text"] {
+            padding: 5px;
+            margin-right: 5px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .navbar button {
+            padding: 5px 10px;
+            background-color: #555;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .navbar button:hover {
+            background-color: #777;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #8FC742;
+            color: white;
+            text-align: left;
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .hero p {
+            margin: 10px 0 20px;
+            font-size: 1.2em;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            background-color: white;
+            color: #8FC742;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background-color: #e2f3d7;
+        }
+
+        /* Main Section */
+        .main-section {
+            padding: 40px 20px;
+        }
+
+        .main-section h2 {
+            font-size: 2em;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .main-section h5 {
+            font-size: 1.2em;
+            color: #666;
+            display: inline-block;
+        }
+
+        .main-section hr {
+            margin-top: 10px;
+            border: 0;
+            border-top: 1px solid #ddd;
+        }
+
+        .main-section p {
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .main-section .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .grid .card {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .grid .card img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .grid .card h3 {
+            margin: 0 0 10px;
+            font-size: 1.2em;
+            color: #007bff;
+            cursor: pointer;
+        }
+
+        .grid .card p {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Logo</a>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Products</a>
+            <div class="dropdown">
+                <a href="#">Services</a>
+                <div class="dropdown-content">
+                    <a href="#">Consulting</a>
+                    <a href="#">Development</a>
+                    <a href="#">Support</a>
+                </div>
+            </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Dramatically Engage</h1>
+        <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+        <button>Engage Now</button>
+    </div>
+
+    <!-- Main Section -->
+    <div class="main-section">
+        <h2>Superior Collaboration</h2>
+        <h5>Visualize Quality</h5>
+        <hr>
+        <p>Proactively envisioned multimedia-based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.</p>
+
+        <div class="grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/700x300" alt="Placeholder">
+                <h3>Efficiently Unleash</h3>
+                <p>Leverage agile frameworks to provide a robust synopsis for high-level overviews.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/700x300" alt="Placeholder">
+                <h3>Completely Synergize</h3>
+                <p>Bring to the table win-win survival strategies to ensure proactive domination.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/700x300" alt="Placeholder">
+                <h3>Dynamically Procrastinate</h3>
+                <p>Capitalize on low-hanging fruit to identify a ballpark value-added activity.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
